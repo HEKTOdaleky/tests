@@ -1,4 +1,4 @@
-const funcWithInnerCallback = function (to, from, next) {
+module.exports = function (to, from, next) {
     next((vm) => {
         const { params } = to;
         const { post } = vm;
@@ -8,4 +8,3 @@ const funcWithInnerCallback = function (to, from, next) {
     });
 };
 
-export default funcWithInnerCallback;

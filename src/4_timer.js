@@ -1,5 +1,4 @@
-const timer = (cb, ms) => {
+module.exports = (cb, ms) => {
     setTimeout(cb, ms);
 };
 
-export default timer;

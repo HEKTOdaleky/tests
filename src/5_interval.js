@@ -1,5 +1,4 @@
-const interval = (cb, ms) => {
+module.exports = (cb, ms) => {
     setInterval(cb, ms);
 };
 
-export default interval;

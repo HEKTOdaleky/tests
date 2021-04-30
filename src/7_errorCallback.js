@@ -1,4 +1,4 @@
-const errorCallback = function (path) {
+module.exports = function (path) {
     let resulPath = path;
     if (!path) return null;
     if (path[0] !== "/") resulPath = `/${resulPath}`;
@@ -9,4 +9,3 @@ const errorCallback = function (path) {
     }
 };
 
-export default errorCallback;

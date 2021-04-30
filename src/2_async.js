@@ -1,6 +1,6 @@
 import axios from "axios";
 
-async function getData() {
+module.exports = async function getData() {
     const response = await axios.get(
         "https://jsonplaceholder.typicode.com/todos"
     );
@@ -8,4 +8,3 @@ async function getData() {
     return response.data;
 }
 
-export default getData;
